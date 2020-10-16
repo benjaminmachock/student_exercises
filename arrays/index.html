@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arrays</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <script>
+      //ACTIVITY 1
 
-  <script>
-    
-    //ACTIVITY 1
+      //Create an array with a list of grocery items. print each item to the console
+      var groceries = ["bread", "milk", "butter", "eggs"];
+      console.log(groceries[0]);
+      console.log(groceries[1]);
+      console.log(groceries[2]);
+      console.log(groceries[3]);
 
-    //Create an array with a list of grocery items. print each item to the console
+      //Create an array with a list of favorite foods. print each item to the console
+      var favFoods = ["Asian", "Greek", "Italian", "BBQ"];
+      console.log(favFoods[0]);
+      console.log(favFoods[1]);
+      console.log(favFoods[2]);
+      console.log(favFoods[3]);
 
-    //Create an array with a list of favorite foods. print each item to the console
+      //Using a for loop, print each item in grocery array to the console
+      for (var i = 0; i < groceries.length; i++) {
+        console.log(groceries[i]);
+      }
 
-    //Using a for loop, print each item in grocery array to the console
+      //Using a for loop, print each item in favorite foods to the console
+      for (var i = 0; i < favFoods.length; i++) {
+        console.log(favFoods[i]);
+      }
 
-    //Using a for loop, print each item in favorite foods to the console
-
-    //Write out in comments why are Arrays beneficial?
-
-
-
-  </script>
-  
-</body>
+      //Write out in comments why are Arrays beneficial?
+    </script>
+  </body>
 </html>
