@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conditional</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional</title>
+  </head>
+  <body>
+    <script>
+      //ACTIVITY 1
 
-    //ACTIVITY 1
+      //Create a variable that stores the numeric value of 18. Using an If/Else statement print a message to the console if a user is 18 or older, and if not print a message to the console that they are not an adult
+      var userAge = 18;
 
-    //Create a variable that stores the numeric value of 18. Using an If/Else statement print a message to the console if a user is 18 or older, and if not print a message to the console that they are not an adult
+      if (userAge >= 18) {
+        console.log("You are an Adult!");
+      } else {
+        console.log("You are not an Adult!");
+      }
 
+      //ACTIVITY 2
 
-    //ACTIVITY 2
+      //Create a variable that stores an age.  create a variable that checks if age is less than or equal to 10. create a variable that checks if age is greater than or equal to 65.  using the variables write an if/else statement and print to the console if someone is a child they eat free, if they are a senior the get a discount, and if they are an adult they need to pay full price
 
-    //Create a variable that stores an age.  create a variable that checks if age is less than or equal to 10. create a variable that checks if age is greater than or equal to 65.  using the variables write an if/else statement and print to the console if someone is a child they eat free, if they are a senior the get a discount, and if they are an adult they need to pay full price 
+      var age = 44;
+      var child = age <= 10;
+      var senior = age >= 65;
 
-  
-  //ACTIVITY 3
+      if (child) {
+        console.log("Dinner is on the house!");
+      } else if (senior) {
+        console.log("Senior discount!!");
+      } else {
+        console.log("No discount for you!");
+      }
 
-  //create a variable that stores a numeric value for a golf round. using an if/else statement print a message to the console of "Nice Round!" if the score was greater than or equal to 72 and the score was less than or equal to 85. else print a message of 'better luck next time'
+      //ACTIVITY 3
 
+      //create a variable that stores a numeric value for a golf round. using an if/else statement print a message to the console of "Nice Round!" if the score was greater than or equal to 72 and the score was less than or equal to 85. else print a message of 'better luck next time'
 
-  //ACTIVITY 4
+      var golfScore = 71;
 
-  //create a variable that stores a boolean value regarding if a user likes music, create another variable that stores a boolean value if another user likes music. using an if/else statement utilizing both variables if both users like music print a message to the console "lets turn on some music". print a different message if only 1 user likes music. print a different message if they both don't like music
+      if (golfScore >= 72 && golfScore <= 85) {
+        console.log("Nice Round!!");
+      } else if (golfScore <= 71) {
+        console.log("Wow! You are an ace!");
+      } else {
+        console.log("Better luck next time!!");
+      }
 
-    //Write out in comments why using Control Flow is beneficial?
+      //ACTIVITY 4
 
-  </script>
-  
-</body>
+      //create a variable that stores a boolean value regarding if a user likes music, create another variable that stores a boolean value if another user likes music. using an if/else statement utilizing both variables if both users like music print a message to the console "lets turn on some music". print a different message if only 1 user likes music. print a different message if they both don't like music
+
+      var userOneLikesMusic = true;
+      var userTwoLikesMusic = true;
+
+      if (userOneLikesMusic && userTwoLikesMusic) {
+        console.log("Lets turn on some music!!");
+      } else if (userOneLikesMusic || userTwoLikesMusic) {
+        console.log("Rock or Country?");
+      } else {
+        console.log("No music? ");
+      }
+
+      //Write out in comments why using Control Flow is beneficial?
+    </script>
+  </body>
 </html>
