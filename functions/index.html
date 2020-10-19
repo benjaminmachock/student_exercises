@@ -11,9 +11,36 @@
 
       //Create a function that checks if a user is old enough to drive and if they have an active drivers license. the function will take in two parameters called age and active.  you will need to create two variables outside of the function that will ask a user for input regarding age and if drivers license is active. within the function body, check if the user is old enough and if they have an active license. if so, alert that they can take the wheel!.  if not, alert the user that they need to take the passenger seat. Call the function and verify your work.
 
+      var age = prompt("What is your age?");
+      var activeLicense = confirm("Do you have an active license?");
+
+      function isDriver(age, active) {
+        if (age >= 18 && activeLicense) {
+          alert("You can take the wheel!");
+        } else {
+          alert("Take the passenger seat!");
+        }
+      }
+
+      isDriver(age, activeLicense);
+
       //ACTIVITY 2
 
-      //write a function that takes in 3 parameters, num1, num2, operator, and calculates the numbers. Within the function body, calculate two numbers and return the correct output based on the operator passed by the user. For operator, user can pass add, subract, multiply, division. Alert the user of the output from calculating both numbers. You will need to create 3 variables outside the function that grabs user input. Call the function and verify your work.
+      //write a function that takes in 3 parameters, num1, num2, operator, and calculates the numbers. Within the function body, calculate two numbers and return the correct output based on the operator passed by the user. For operator, user can pass add, subtract, multiply, division. Alert the user of the output from calculating both numbers. You will need to create 3 variables outside the function that grabs user input. Call the function and verify your work.
+
+      function calculate(num1, num2, operator) {
+        if (operator === "add") {
+          return num1 + num2;
+        } else if (operator === "subtract") {
+          return num1 - num2;
+        } else if (operator === "multiply") {
+          return num1 * num2;
+        } else if (operator === "division") {
+          return num1 / num2;
+        }
+      }
+
+      console.log(calculate(2, 4, "add"));
     </script>
   </body>
 </html>
